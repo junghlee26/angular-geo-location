@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    var app = angular.module('BlakWealth');
+    var app = angular.module('BWProject');
 
     app.config(configure);
 
@@ -25,7 +25,7 @@
 
 (function () {
 
-    var app = angular.module('BlakWealth');
+    var app = angular.module('BWProject');
 
     app.controller('userMapController', userMapController);
 
@@ -92,8 +92,5 @@
         function _getLocationError() {
             console.log("getting user location error");
         }
-
-
-
     }
 })();
