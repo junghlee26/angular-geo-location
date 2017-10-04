@@ -2,7 +2,7 @@
     "use strict";
 
     // get a reference to the existing BlakWealth angular module
-    var app = angular.module('BlakWealth');
+    var app = angular.module('BWProject');
 
     // register our configuration callback
     app.config(configure);
@@ -50,7 +50,7 @@
 //----------Get profile information factory----------//
 (function () {
     "use strict";
-    angular.module('BlakWealth')
+    angular.module('BWProject')
         .factory('getInfoService', getInfoService);
 
     getInfoService.$inject = ['$http'];
@@ -77,7 +77,7 @@
 //----------Update profile information factory----------//
 (function () {
     "use strict";
-    angular.module('BlakWealth')
+    angular.module('BWProject')
         .factory('updateInfoService', updateInfoService);
 
     updateInfoService.$inject = ['$http'];
@@ -104,7 +104,7 @@
 //----------Update password factory----------//
 (function () {
     "use strict";
-    angular.module('BlakWealth')
+    angular.module('BWProject')
         .factory('updatePasswordService', updatePasswordService);
 
     updatePasswordService.$inject = ['$http'];
@@ -132,7 +132,7 @@
 //-----Controller for get info, update info, cancel edit, and update password-----//
 (function () {
     "use strict";
-    angular.module('BlakWealth')
+    angular.module('BWProject')
         .controller('profileController', profileController);
 
     profileController.$inject = ['getInfoService', 'updateInfoService', 'updatePasswordService', '$window', 'userInfoService', '$scope', 'userService', '$state'];
@@ -335,7 +335,7 @@
     }
 
 //Putting phone number on profile page in (xxx)xxx-xxxx format
-    angular.module('BlakWealth').filter('tel', function () {
+    angular.module('BWProject').filter('tel', function () {
         return function (tel) {
             if (!tel) { return ''; }
 
